@@ -8,15 +8,28 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
 const particlesOptions = {
-  particles: {
-    number: {
-      value: 30,
+     particles: {
+     number: {
+      value: 190,
       density: {
-        enable: true,
-        value_area: 800
+      enable: true,
+      value_area: 800
       }
     }
   }
+}
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      input: '',
+    }
+  }
+}
+
+onInputChange = (event) => {
+  console.log(event);
 }
 
 
@@ -27,7 +40,7 @@ function App() {
       <Navigation />
       <Logo />
       <Rank />
-      <ImageLinkForm />
+      <ImageLinkForm onInputChange={onInputChange}/>
     </div>
   );
 }

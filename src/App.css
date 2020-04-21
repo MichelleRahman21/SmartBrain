@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+/* using that for our styling in the components */
 
 .center {
   display: flex;
@@ -15,3 +16,4 @@
   left: 0;
   z-index: -1;
 }
+/* z-index -1 tells the particles that we want them below everyhting, that way it does not overwrite the other code. */
