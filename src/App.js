@@ -4,8 +4,11 @@ import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import Rank from './components/Rank/Rank';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
-
 import './App.css';
+
+const app = new Clarifai.App({
+  apiKey:'7b91f5b5c1d047b48ce73791549aed1d'
+})
 
 const particlesOptions = {
      particles: {
