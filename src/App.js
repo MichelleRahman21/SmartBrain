@@ -42,7 +42,9 @@ calculateFaceLocation = (data) => {
   const width = Number(image.width);
   const height = Number(image.height);
 
-  console.log(width, height);
+  return {
+    
+  }
 }
 
 
