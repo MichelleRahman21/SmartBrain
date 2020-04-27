@@ -6,6 +6,7 @@ import Clarifai from 'clarifai';
 
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import Signin from './components/Signin/Signin';
 import Rank from './components/Rank/Rank';
 
 import './App.css';
