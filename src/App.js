@@ -99,9 +99,8 @@ render() {
           params={particlesOptions}
           />
           <Navigation onRouteChange={this.onRouteChange} />
-            { this.state.route === 'signin'
-            ? <Signin onRouteChange={this.onRouteChange} />
-            : <div>
+            { this.state.route === 'home '
+            ? <div>
             <Logo />
             <Rank />
             <ImageLinkForm
@@ -109,10 +108,15 @@ render() {
               onButtonSubmit={this.onButtonSubmit}
             />
             <FaceRecognition   box={this.state.box} imageURL={this.state.imageURL} />
-          </div>
+            </div>
+            :(
+              this.state.route === 'signin'
+              ? <Signin onRouteChange={this.onRouteChange} />
+              : <Register onRouteChange={this.onRouteChange} />
+            )
         }
       </div>
-    )
+    );
   }
 }
 
